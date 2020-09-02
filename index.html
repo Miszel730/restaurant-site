@@ -4,62 +4,51 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Petrogard</title>
     <link rel="stylesheet" href="style.css">
-    <title>Restaurant XYZ</title>
 </head>
 
 <body>
-    <div class="content">
-        <div class="item1">
-            <h1>Restaurant</h1>
-        </div>
-        <div class="item2">
-            <ul class="nav-bar-links">
-                <li class="nav-bar-link">
-                    <a href="">Home</a>
-                </li>
-                <li class="nav-bar-link">
-                    <a href="">Starters</a>
-                </li>
-                <li class="nav-bar-link">
-                    <a href="">Main</a>
-                </li>
-                <li class="nav-bar-link">
-                    <a href="">Desserts</a>
-                </li>
-                <li class="nav-bar-link">
-                    <a href="">Drinks</a>
-                </li>
-            </ul>
-        </div>
-        <div class="item3">
-            <img src="imgs/small/syltedeloeg-sm.jpg">
-            <h2>Zygroffs farmers plate</h2>
-            <p>Zygroffs bondeplatte - bøndernes svar på Tapas</p>
-            <div class="price"><span>109</span></div>
-        </div>
-        <div class="item4">
-            <img src="imgs/small/boef-sm.jpg">
-            <h2>Cabanossi</h2>
-            <p>Cabanossi med rødbedecreme og løg</p>
-            <div class="price"><span><strike><strong>49</strong></strike> <br><strong>Discount: -10</strong></span></div>
-        </div>
-        <div class="item5">
-            <img src="imgs/small/kaviarpandekager-sm.jpg">
-            <h2>Pancakes</h2>
-            <p>Brændte pandekager med Bordyriske ørne-kaviar</p>
-            <div class="price"><span>109</span></div>
+    <header>
+        <h1>Restaurant</h1>
+    </header>
+    <nav>
+<!--
+        <ul class="nav-bar-links">
+            <li class="nav-bar-link">
+                <a href="">Home</a>
+            </li>
+            <li class="nav-bar-link">
+                <a href="">Starters</a>
+            </li>
+            <li class="nav-bar-link">
+                <a href="">Main</a>
+            </li>
+            <li class="nav-bar-link">
+                <a href="">Desserts</a>
+            </li>
+            <li class="nav-bar-link">
+                <a href="">Drinks</a>
+            </li>
+        </ul>
+-->
+    </nav>
+    <main class="menu">
+        <section id="food">
+            <h2>Offer</h2>
+            <template id="productTemplate">
+                <article class="stock">
+                    <img src="imgs/small/syltedeloeg-sm.jpg">
+                    <h3 class="data_name">Zygroffs farmers plate</h3>
+                    <p>Zygroffs bondeplatte - bøndernes svar på Tapas</p>
+                    <h5 class="data_price">
+                        <span>109</span>
+                    </h5>
+                    <h5 class="data_discount">DISC</h5>
+                </article>
+            </template>
 
-        </div>
-        <div class="item6">
-        <img src="imgs/small/cola-sm.jpg">
-        <h2>Cola</h2>
-        <p>Gloske - russisk for Cola - fra bryggeriet Iznogoud</p>
-        <div class="price"><span>39</span></div>
-        </div>
-
-    </div>
-
-</body>
-
-</html>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body></html>
